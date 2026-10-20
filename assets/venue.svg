@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 380">
+  <rect width="560" height="380" rx="18" fill="#f5f5fa"/>
+  <rect y="250" width="560" height="130" fill="#d9d9e6"/>
+  <!-- main hall -->
+  <rect x="120" y="110" width="320" height="160" fill="#3b2fc9"/>
+  <polygon points="100,110 280,40 460,110" fill="#2a2096"/>
+  <g fill="#ffffff" opacity="0.9">
+    <rect x="150" y="140" width="40" height="50" rx="4"/>
+    <rect x="210" y="140" width="40" height="50" rx="4"/>
+    <rect x="310" y="140" width="40" height="50" rx="4"/>
+    <rect x="370" y="140" width="40" height="50" rx="4"/>
+  </g>
+  <rect x="255" y="190" width="50" height="80" rx="4" fill="#ffb020"/>
+  <!-- trees -->
+  <g fill="#126b38">
+    <circle cx="60" cy="220" r="34"/><rect x="55" y="240" width="10" height="40" fill="#6b4a2b"/>
+    <circle cx="500" cy="215" r="38"/><rect x="495" y="240" width="10" height="40" fill="#6b4a2b"/>
+  </g>
+  <!-- banner -->
+  <rect x="200" y="78" width="160" height="26" rx="6" fill="#ffb020"/>
+  <text x="280" y="96" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="14" fill="#1b1b2f">PIXEL SUMMIT</text>
+</svg>

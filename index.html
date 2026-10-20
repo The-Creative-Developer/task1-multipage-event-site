@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pixel Summit 2026 is a two-day student web development conference in Pune with talks, workshops and a hackathon.">
+  <title>Pixel Summit 2026 | Student Web Dev Conference</title>
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main">
+      <a class="logo" href="index.html">
+        <img class="logo-mark" src="assets/logo.svg" alt="" width="32" height="32">
+        Pixel Summit
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+        <span class="nav-toggle-bar"></span>
+        <span class="visually-hidden">Menu</span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="speakers.html">Speakers</a></li>
+        <li><a href="register.html">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">Student Web Dev Conference</span>
+          <h1 id="hero-title">Learn, build and ship the web at Pixel Summit 2026</h1>
+          <ul class="hero-meta">
+            <li><time datetime="2026-12-12">12–13 Dec 2026</time></li>
+            <li>Innovation Hall, Pune</li>
+            <li>Free for students</li>
+          </ul>
+          <p class="lead">Two days of talks, hands-on workshops and a 12-hour hackathon run by students, for students. Meet people who build things for the web and leave with something you made yourself.</p>
+          <div class="hero-actions">
+            <a class="btn btn--primary" href="register.html">Get your free pass</a>
+            <a class="btn btn--ghost" href="schedule.html">See the schedule</a>
+          </div>
+        </div>
+        <img class="hero-art" src="assets/hero.svg" width="560" height="420"
+             alt="Illustration of a speaker on stage in front of a screen that reads 'build the web', with an audience watching">
+      </div>
+    </section>
+
+    <section class="section section--alt" aria-labelledby="countdown-title">
+      <div class="container">
+        <h2 id="countdown-title" class="visually-hidden">Countdown to the event</h2>
+        <!-- Filled in by js/main.js; the static values are a fallback if JS is off -->
+        <dl class="countdown" id="countdown" data-target="2026-12-12T09:00:00+05:30">
+          <div><dt>Days</dt><dd data-unit="days">--</dd></div>
+          <div><dt>Hours</dt><dd data-unit="hours">--</dd></div>
+          <div><dt>Minutes</dt><dd data-unit="minutes">--</dd></div>
+          <div><dt>Seconds</dt><dd data-unit="seconds">--</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="why-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Why attend</span>
+          <h2 id="why-title">More than a lecture hall</h2>
+          <p class="lead">Every session is built around doing, not just listening.</p>
+        </div>
+        <div class="grid grid--3">
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">🎤</div>
+            <h3>12 practical talks</h3>
+            <p>Short, focused talks on accessibility, performance, React, APIs and getting your first internship.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">🛠️</div>
+            <h3>Hands-on workshops</h3>
+            <p>Bring a laptop. Build a responsive site, a REST API and a deploy pipeline with mentors next to you.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">🏆</div>
+            <h3>12-hour hackathon</h3>
+            <p>Team up and build something useful for your campus. Top three teams win mentorship and swag.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" aria-labelledby="numbers-title">
+      <div class="container">
+        <h2 id="numbers-title" class="visually-hidden">Event in numbers</h2>
+        <dl class="stats">
+          <div><dt>Attendees expected</dt><dd>600+</dd></div>
+          <div><dt>Speakers</dt><dd>18</dd></div>
+          <div><dt>Workshops</dt><dd>6</dd></div>
+          <div><dt>Colleges</dt><dd>40</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="venue-title">
+      <div class="container split">
+        <img src="assets/venue.svg" width="560" height="380" loading="lazy"
+             alt="Illustration of the Innovation Hall building with a Pixel Summit banner over the entrance">
+        <div>
+          <span class="eyebrow">Venue</span>
+          <h2 id="venue-title">Innovation Hall, Pune</h2>
+          <p>A short walk from the metro, with a 500-seat main hall, three workshop rooms and a hack space that stays open all night.</p>
+          <ul class="check-list">
+            <li>Wheelchair-accessible entrances, lifts and restrooms</li>
+            <li>Live captions on the main stage</li>
+            <li>Quiet room and free lunch on both days</li>
+          </ul>
+          <a href="https://www.openstreetmap.org/search?query=Pune" rel="noopener" target="_blank">
+            Open the map<span class="visually-hidden"> (opens in a new tab)</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt faq" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">FAQ</span>
+          <h2 id="faq-title">Questions people ask</h2>
+        </div>
+        <details>
+          <summary>Is it really free?</summary>
+          <p>Yes. Student passes are free and include lunch on both days. Professionals can buy a supporter pass to help cover costs.</p>
+        </details>
+        <details>
+          <summary>Do I need to know how to code already?</summary>
+          <p>No. The Day 1 workshops start from HTML and CSS. The hackathon has a beginner track with mentors.</p>
+        </details>
+        <details>
+          <summary>Can I join the hackathon alone?</summary>
+          <p>Yes. We run team matching on the morning of Day 2, so you can come solo and find a team there.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="cta">
+          <h2 id="cta-title">Seats are limited to 600</h2>
+          <p>Registration closes on 5 December 2026 or when we run out of space.</p>
+          <a class="btn btn--light" href="register.html">Register now</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h2>Pixel Summit 2026</h2>
+          <p>A student-run web development conference. 12–13 December 2026, Innovation Hall, Pune.</p>
+        </div>
+        <nav aria-label="Footer">
+          <h2>Pages</h2>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="speakers.html">Speakers</a></li>
+            <li><a href="register.html">Register</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h2>Contact</h2>
+          <ul>
+            <li><a href="mailto:hello@pixelsummit.example">hello@pixelsummit.example</a></li>
+            <li><a href="https://github.com" rel="noopener" target="_blank">GitHub<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-bottom">© <span data-year>2026</span> Pixel Summit. Built with HTML, CSS and JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
