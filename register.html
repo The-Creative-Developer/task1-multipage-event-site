@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Register for a free student pass to Pixel Summit 2026.">
+  <title>Register | Pixel Summit 2026</title>
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main">
+      <a class="logo" href="index.html">
+        <img class="logo-mark" src="assets/logo.svg" alt="" width="32" height="32">
+        Pixel Summit
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+        <span class="nav-toggle-bar"></span>
+        <span class="visually-hidden">Menu</span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="speakers.html">Speakers</a></li>
+        <li><a href="register.html" aria-current="page">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Register</span>
+        <h1>Get your pass</h1>
+        <p class="lead">It takes about two minutes. Fields marked with <span class="required" aria-hidden="true">*</span><span class="visually-hidden">an asterisk</span> are required.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container register-layout">
+        <form class="form" id="register-form" novalidate>
+          <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="name">Full name <span class="required" aria-hidden="true">*</span></label>
+              <input id="name" name="name" type="text" autocomplete="name" required
+                     aria-describedby="name-error">
+              <span class="error-msg" id="name-error"></span>
+            </div>
+            <div class="field">
+              <label for="email">Email <span class="required" aria-hidden="true">*</span></label>
+              <input id="email" name="email" type="email" autocomplete="email" required
+                     aria-describedby="email-hint email-error">
+              <span class="hint" id="email-hint">We send your ticket here.</span>
+              <span class="error-msg" id="email-error"></span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="college">College <span class="required" aria-hidden="true">*</span></label>
+              <input id="college" name="college" type="text" autocomplete="organization" required
+                     aria-describedby="college-error">
+              <span class="error-msg" id="college-error"></span>
+            </div>
+            <div class="field">
+              <label for="year">Year of study <span class="required" aria-hidden="true">*</span></label>
+              <select id="year" name="year" required aria-describedby="year-error">
+                <option value="">Choose one</option>
+                <option>First year</option>
+                <option>Second year</option>
+                <option>Third year</option>
+                <option>Final year</option>
+                <option>Not a student</option>
+              </select>
+              <span class="error-msg" id="year-error"></span>
+            </div>
+          </div>
+
+          <fieldset id="role" aria-describedby="role-error">
+            <legend>I am coming as <span class="required" aria-hidden="true">*</span></legend>
+            <label class="choice"><input type="radio" name="role" value="attendee" required> Attendee</label>
+            <label class="choice"><input type="radio" name="role" value="mentor"> Hackathon mentor</label>
+            <label class="choice"><input type="radio" name="role" value="volunteer"> Volunteer</label>
+            <span class="error-msg" id="role-error"></span>
+          </fieldset>
+
+          <fieldset>
+            <legend>Workshops I want to join (optional)</legend>
+            <label class="choice"><input type="checkbox" name="workshops" value="layouts"> Responsive layouts with Grid and Flexbox</label>
+            <label class="choice"><input type="checkbox" name="workshops" value="api"> Build your first REST API with Express</label>
+            <label class="choice"><input type="checkbox" name="workshops" value="deploy"> Deploy with GitHub Pages and Netlify</label>
+          </fieldset>
+
+          <div class="field">
+            <label for="needs">Accessibility or dietary needs (optional)</label>
+            <textarea id="needs" name="needs" aria-describedby="needs-hint" maxlength="500"></textarea>
+            <span class="hint" id="needs-hint">Tell us anything that would make the event easier for you. Max 500 characters.</span>
+          </div>
+
+          <div class="field">
+            <label class="choice">
+              <input type="checkbox" id="agree" name="agree" required aria-describedby="agree-error">
+              I agree to follow the event code of conduct <span class="required" aria-hidden="true">*</span>
+            </label>
+            <span class="error-msg" id="agree-error"></span>
+          </div>
+
+          <div>
+            <button class="btn btn--primary" type="submit">Register</button>
+          </div>
+        </form>
+
+        <aside aria-labelledby="passes-title">
+          <h2 id="passes-title">Passes</h2>
+          <div class="ticket-list">
+            <div class="card">
+              <h3>Student pass</h3>
+              <p class="price">Free</p>
+              <p>Both days, lunch and the hackathon.</p>
+            </div>
+            <div class="card">
+              <h3>Supporter pass</h3>
+              <p class="price">₹999</p>
+              <p>For professionals. Helps us keep student passes free.</p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h2>Pixel Summit 2026</h2>
+          <p>A student-run web development conference. 12–13 December 2026, Innovation Hall, Pune.</p>
+        </div>
+        <nav aria-label="Footer">
+          <h2>Pages</h2>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="speakers.html">Speakers</a></li>
+            <li><a href="register.html">Register</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h2>Contact</h2>
+          <ul>
+            <li><a href="mailto:hello@pixelsummit.example">hello@pixelsummit.example</a></li>
+            <li><a href="https://github.com" rel="noopener" target="_blank">GitHub<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-bottom">© <span data-year>2026</span> Pixel Summit. Built with HTML, CSS and JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/register.js"></script>
+</body>
+</html>
