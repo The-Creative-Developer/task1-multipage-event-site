@@ -5,6 +5,8 @@ Built with plain **HTML, CSS and JavaScript**, no frameworks or build step.
 
 > SY Web Dev Recruitment — **Task 1: Responsive multi-page website**
 
+**Live site:** <https://the-creative-developer.github.io/task1-multipage-event-site/> (hosted on GitHub Pages)
+
 ![Home page](screenshots/index.png)
 
 ## Pages
