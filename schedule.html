@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Full two-day schedule of talks, workshops and the hackathon at Pixel Summit 2026.">
+  <title>Schedule | Pixel Summit 2026</title>
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main">
+      <a class="logo" href="index.html">
+        <img class="logo-mark" src="assets/logo.svg" alt="" width="32" height="32">
+        Pixel Summit
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+        <span class="nav-toggle-bar"></span>
+        <span class="visually-hidden">Menu</span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="schedule.html" aria-current="page">Schedule</a></li>
+        <li><a href="speakers.html">Speakers</a></li>
+        <li><a href="register.html">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Schedule</span>
+        <h1>Two days, three tracks</h1>
+        <p class="lead">Day 1 is talks and workshops. Day 2 is the hackathon. All times are in IST (UTC+5:30).</p>
+      </div>
+    </section>
+
+    <section class="section" aria-label="Session list">
+      <div class="container">
+        <div class="tabs" role="tablist" aria-label="Choose a day">
+          <button class="tab" type="button" role="tab" id="tab-day1" aria-selected="true" aria-controls="panel-day1">
+            Day 1 · Sat 12 Dec
+          </button>
+          <button class="tab" type="button" role="tab" id="tab-day2" aria-selected="false" aria-controls="panel-day2" tabindex="-1">
+            Day 2 · Sun 13 Dec
+          </button>
+        </div>
+
+        <div class="filter-bar">
+          <label for="type-filter">Show</label>
+          <select id="type-filter">
+            <option value="all">All sessions</option>
+            <option value="talk">Talks</option>
+            <option value="workshop">Workshops</option>
+            <option value="break">Breaks</option>
+          </select>
+          <p class="hint" id="result-count" aria-live="polite"></p>
+        </div>
+
+        <div role="tabpanel" id="panel-day1" aria-labelledby="tab-day1">
+          <ol class="timeline">
+            <li class="session" data-type="break">
+              <time datetime="2026-12-12T08:30">08:30</time>
+              <div><span class="tag tag--break">Break</span><h3>Check-in and breakfast</h3><p>Collect your badge at the main entrance.</p></div>
+            </li>
+            <li class="session" data-type="talk">
+              <time datetime="2026-12-12T09:30">09:30</time>
+              <div><span class="tag tag--talk">Talk</span><h3>Opening keynote: The web is for everyone</h3><p>Ananya Rao · Main hall</p></div>
+            </li>
+            <li class="session" data-type="talk">
+              <time datetime="2026-12-12T10:15">10:15</time>
+              <div><span class="tag tag--talk">Talk</span><h3>Accessibility in 20 minutes a day</h3><p>Sara D'Souza · Main hall</p></div>
+            </li>
+            <li class="session" data-type="workshop">
+              <time datetime="2026-12-12T11:00">11:00</time>
+              <div><span class="tag tag--workshop">Workshop</span><h3>Responsive layouts with Grid and Flexbox</h3><p>Kabir Mehta · Room A · Bring a laptop</p></div>
+            </li>
+            <li class="session" data-type="break">
+              <time datetime="2026-12-12T13:00">13:00</time>
+              <div><span class="tag tag--break">Break</span><h3>Lunch</h3><p>Vegetarian and vegan options available.</p></div>
+            </li>
+            <li class="session" data-type="workshop">
+              <time datetime="2026-12-12T14:00">14:00</time>
+              <div><span class="tag tag--workshop">Workshop</span><h3>Build your first REST API with Express</h3><p>Rohan Iyer · Room B</p></div>
+            </li>
+            <li class="session" data-type="talk">
+              <time datetime="2026-12-12T15:30">15:30</time>
+              <div><span class="tag tag--talk">Talk</span><h3>Making websites fast on cheap phones</h3><p>Meera Kulkarni · Main hall</p></div>
+            </li>
+            <li class="session" data-type="talk">
+              <time datetime="2026-12-12T16:30">16:30</time>
+              <div><span class="tag tag--talk">Talk</span><h3>Panel: Landing your first internship</h3><p>All speakers · Main hall</p></div>
+            </li>
+          </ol>
+        </div>
+
+        <div role="tabpanel" id="panel-day2" aria-labelledby="tab-day2" hidden>
+          <ol class="timeline">
+            <li class="session" data-type="break">
+              <time datetime="2026-12-13T08:30">08:30</time>
+              <div><span class="tag tag--break">Break</span><h3>Breakfast and team matching</h3><p>Come alone and find a team here.</p></div>
+            </li>
+            <li class="session" data-type="talk">
+              <time datetime="2026-12-13T09:30">09:30</time>
+              <div><span class="tag tag--talk">Talk</span><h3>Hackathon kickoff and problem statements</h3><p>Arjun Nair · Main hall</p></div>
+            </li>
+            <li class="session" data-type="workshop">
+              <time datetime="2026-12-13T10:00">10:00</time>
+              <div><span class="tag tag--workshop">Workshop</span><h3>Hacking begins</h3><p>Hack space · Mentors on the floor all day</p></div>
+            </li>
+            <li class="session" data-type="workshop">
+              <time datetime="2026-12-13T12:00">12:00</time>
+              <div><span class="tag tag--workshop">Workshop</span><h3>Deploy in 15 minutes with GitHub Pages and Netlify</h3><p>Kabir Mehta · Room A</p></div>
+            </li>
+            <li class="session" data-type="break">
+              <time datetime="2026-12-13T13:00">13:00</time>
+              <div><span class="tag tag--break">Break</span><h3>Lunch</h3><p>Served in the hack space.</p></div>
+            </li>
+            <li class="session" data-type="talk">
+              <time datetime="2026-12-13T18:00">18:00</time>
+              <div><span class="tag tag--talk">Talk</span><h3>Demos and judging</h3><p>Every team gets 3 minutes · Main hall</p></div>
+            </li>
+            <li class="session" data-type="talk">
+              <time datetime="2026-12-13T21:00">21:00</time>
+              <div><span class="tag tag--talk">Talk</span><h3>Prizes and closing</h3><p>Main hall</p></div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h2>Pixel Summit 2026</h2>
+          <p>A student-run web development conference. 12–13 December 2026, Innovation Hall, Pune.</p>
+        </div>
+        <nav aria-label="Footer">
+          <h2>Pages</h2>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="speakers.html">Speakers</a></li>
+            <li><a href="register.html">Register</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h2>Contact</h2>
+          <ul>
+            <li><a href="mailto:hello@pixelsummit.example">hello@pixelsummit.example</a></li>
+            <li><a href="https://github.com" rel="noopener" target="_blank">GitHub<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-bottom">© <span data-year>2026</span> Pixel Summit. Built with HTML, CSS and JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/schedule.js"></script>
+</body>
+</html>
