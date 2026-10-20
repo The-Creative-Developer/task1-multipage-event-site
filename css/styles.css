@@ -89,6 +89,9 @@ a:hover { color: var(--color-primary-dark); }
   border-radius: 4px;
 }
 
+/* Make the hidden attribute win over display rules like grid/flex */
+[hidden] { display: none !important; }
+
 /* Screen-reader-only utility */
 .visually-hidden {
   position: absolute !important;
@@ -556,7 +559,10 @@ a:hover { color: var(--color-primary-dark); }
 .tag--break { background: #e3f5ea; border-color: #a9dcbc; }
 
 /* ---------- Speakers ---------- */
+.plain-list { list-style: none; padding: 0; margin: 0; }
+
 .speaker {
+  height: 100%;
   text-align: center;
 }
 
